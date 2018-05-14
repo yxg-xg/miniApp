@@ -1,0 +1,86 @@
+@import'/commom/bootstrap.wxss';
+@import '/commom/common.wxss';
+@import'/commom/iconfont.wxss';
+.form-control{
+  width: auto
+}
+swiper{
+  height: 282rpx
+ 
+}
+swiper-item image {
+    width: 100%;
+    height: 100%;
+}
+.search{
+  position: relative；
+  
+}
+.search input{
+  padding-left: 100rpx
+}
+.search icon{
+  position: absolute;
+  left: 60rpx;
+  top: 26rpx
+}
+.loupanTitle{
+  border-bottom: 1px solid #eee;
+  padding-bottom: 40rpx;
+}
+.loupanFont{
+  font-size: 36rpx;
+  border-left: 8rpx solid #00c47a;
+  padding-left: 20rpx;
+
+}
+.screen{
+  padding: 40rpx 0;
+}
+.recommendList{
+  margin-top: 40rpx;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 40rpx
+}
+.recommendList .recommendListImg{
+  width: 300rpx;
+  height: 204rpx;
+  float: left;
+  margin-right: 40rpx;
+}
+.recommendList .recommendListImg image{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.recommendListCon{
+  float: left;
+}
+.recommendListCon .price{
+  margin-top: 15rpx;
+  color: red;
+  font-size: 32rpx
+}
+.tally{
+  margin-top: 15rpx;
+}
+.tally text{
+  padding: 10rpx;
+  font-size: 24rpx;
+  margin-right: 10rpx;
+}
+.tally text:nth-child(1){
+  color: #ff6b00;
+  background: #fff5df;
+}
+.tally text:nth-child(2){
+  color: #0bbe5a;
+  background: #e6f7ed;
+}
+.tally text:nth-child(3){
+  color: #f65b2f;
+  background: #fee0e2;
+}
+.discountsMsg{
+  margin-top: 15rpx;
+}

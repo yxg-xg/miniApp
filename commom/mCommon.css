@@ -1,0 +1,30 @@
+
+page{
+    font-family: Arial, "Microsoft Yahei";
+    background-color: #ebf0f6;
+}
+.mTop{
+    margin-top: 5px;
+}
+.pTop{
+    Padding-top: 5px;
+}
+.bTop{
+    padding-bottom: 5px;
+}
+.whiteBg{
+    background-color: #fff;
+}
+section{
+    position: relative;
+    background-color: #fff;
+}
+a:focus{
+    outline: none;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}

@@ -1,0 +1,44 @@
+<!--index.wxml-->
+<view class="">
+  <swiper indicator-dots='true' autoplay="false" interval='{{interval}}' duration='{{duration}}' circular="true" >
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src='{{item}}' class='slide-image' width="100%" ></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="section pTop search bTop">
+  <view class='container-fluid'>
+    <input placeholder="输入楼盘名/地名/开发商等" class='form-control' />
+    <icon size='20' type='search' color='purple'></icon>
+  </view>
+</view>
+<view class='screen mTop'>
+  <view class='container-fluid'>
+    <view class='loupanTitle'>
+      <view class='loupanFont'>
+        推荐楼盘
+      </view>
+    </view>
+    <view class='recommendList' wx:for="{{recommendImg}}" wx:for-item="item" wx:key="{{index}}">
+      <view class='clearfix'>
+        <view class='recommendListImg'>
+          <image mode='aspectFit' src="{{item.src}}" ></image>
+        </view>
+        <view class='recommendListCon'>
+          <text class='h4'>{{item.title}} <text class='small'>{{item.small}}</text> </text>
+          <view class='price'>
+            <text>{{item.price}}元/m²</text>
+          </view>
+          <view class='tally'>
+            <text>住宅</text><text>酒店式公寓</text><text>商铺</text>
+          </view>
+          <view class='discountsMsg'>
+            <text>{{item.discountsMsg}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

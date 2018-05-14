@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"#333",
+    "navigationBarBackgroundColor": "#00c47a",
+    "navigationBarTitleText": "海南购新房",
+    "navigationBarTextStyle":"#fff",
+    "enablePullDownRefresh": true
+  },
+  "tabBar":{
+    "color":"#000",
+    "selectedColor":"#00c47a",
+    "backgroundColor":"#fff",
+    "borderStyle":"#eee",
+    "list":[
+      {
+        "pagePath": "pages/index/index",
+        "text": "楼盘列表",
+        "iconPath": "img/liebiao.png",
+        "selectedIconPath": "img/liebiao.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "资讯",
+        "iconPath": "img/zixun.png",
+        "selectedIconPath": "img/zixun.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "问答",
+        "iconPath": "img/wenda.png",
+        "selectedIconPath": "img/wenda.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "免费叫车",
+        "iconPath": "img/jiaoche.png",
+        "selectedIconPath": "img/jiaoche.png"
+      }
+    ]
+  }
+}
