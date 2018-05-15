@@ -58,8 +58,11 @@
         </view>
       </view>
       <view class='informationMain'>
-        <view class='informationMainText'>
-          <text>房产资讯房产资讯房产资讯房产资讯房产资讯房产资讯房产资讯</text>
+        <view class='informationMainText' wx:for="{{informationMain}}" wx:for-item="item" wx:key="{{index}}">
+          <view class='informationMainTextB'>
+            <text>{{item.informationMainText}}</text>
+          </view>
+          <text class='clearfix'>{{item.textSmall}}</text>
         </view>
         
       </view>
