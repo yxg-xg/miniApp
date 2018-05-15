@@ -84,3 +84,41 @@ swiper-item image {
 .discountsMsg{
   margin-top: 15rpx;
 }
+.information{
+
+}
+.informationTitle{
+
+}
+.informationTitleLeft{
+  font-size: 36rpx;
+  font-weight: bold;
+  border-left: 8rpx solid #00c47a;
+  padding-left: 20rpx;
+}
+.informationTitleRight{
+  font-size: 35rpx;
+}
+
+.informationTitleRightImg{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+  
+}
+.informationTitleRightImg image{
+  width: 100%;
+  height: 100%;
+  
+}
+.informationMain{}
+.informationMainText{
+  border-bottom:2rpx solid #f5f5f5;
+  padding:20rpx 0;
+  overflow-wrap: break-word;
+}
+.informationMainText text{
+ 
+  font-weight: bold;
+  font-size: 30rpx;
+}
