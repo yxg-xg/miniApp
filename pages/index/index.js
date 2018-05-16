@@ -19,7 +19,7 @@ Page({
       { src: '/img/aa.jpg', title: '海南绿地城', small: '金江', price: '10000', discountsMsg: '优惠政策'}
     ],
     informationMain:[
-      { informationMainText: "房产资讯房产资讯房产资讯房产资讯房产资讯", textSmall:"房产资讯房产资讯房产资讯房产资讯房产资讯"}
+      { informationMainText: "房产资讯房产资讯房产资讯房产资讯房产资讯", textSmall:"房产资讯房产产资讯房产资产资讯房产资产资讯房产资"}
     ]
   },
   

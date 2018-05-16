@@ -4,13 +4,13 @@ page{
     background-color: #ebf0f6;
 }
 .mTop{
-    margin-top: 5px;
+    margin-top: 10rpx;
 }
 .pTop{
-    Padding-top: 5px;
+    Padding-top: 10rpx;
 }
 .bTop{
-    padding-bottom: 5px;
+    padding-bottom: 10rpx;
 }
 .whiteBg{
     background-color: #fff;

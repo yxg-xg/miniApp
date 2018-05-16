@@ -1,0 +1,36 @@
+<view class='container-fluid'>
+  <view class="section pTop search bTop">
+    <view class='container-fluid'>
+      <input placeholder="输入楼盘名/地名/开发商等" class='form-control' />
+      <icon size='15' type='search' color='purple'></icon>
+    </view>
+  </view>
+</view>
+<view class='filtrate clearfix'>
+  <view class='col-xs-3 filtrateClick' 
+  wx:for="{{filtrate}}" 
+  wx:key="{{index}}" 
+  data-index='{{index}}' 
+  wx:for-item="filtrateItem" 
+  bindtap="filtrateClick">
+    <text>{{filtrateItem.filtrateName}}</text>
+    <image src='/img/icon/bottom.png' mode='aspectFit'></image>
+  </view>
+</view>
+<view class='filtrateConOuter'>
+    <view class='container-fluid filtrateCon'>
+      <view class='filtrateConList'>
+        <view class='col-xs-6'>
+          <view class='filtrateLi'>
+            <text>不限</text>
+          </view>
+        </view>
+
+        <view class='col-xs-6'>
+          <view class='filtrateLi'>
+            <text>不限</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>

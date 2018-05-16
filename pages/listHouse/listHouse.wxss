@@ -1,0 +1,46 @@
+@import'/commom/bootstrap.wxss';
+@import '/commom/common.wxss';
+@import'/commom/iconfont.wxss';
+.form-control{
+  width: auto
+}
+.search{
+  position: relative；
+  
+}
+.search input{
+  padding-left: 100rpx
+}
+.search icon{
+  position: absolute;
+  left: 60rpx;
+  top: 26rpx
+}
+.filtrateClick{
+  font-size: 35rpx;
+  text-align: center;
+  padding: 20rpx 0;
+}
+.filtrateClick image{
+  width: 25rpx;
+  height: 25rpx;
+  margin-left: 12rpx;
+}
+.filtrate{
+  
+}
+.filtrateConOuter{
+  position: relative;
+  width: 100%;
+}
+.filtrateCon{
+  width: 100%;
+  position: absolute;
+  top: 0rpx;
+  left: 0;
+}
+.filtrateLi{
+  padding:25rpx 15rpx;
+  border-bottom: 1px solid #eee;
+  font-size: 32rpx; 
+}

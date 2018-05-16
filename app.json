@@ -1,7 +1,8 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/listHouse/listHouse"
   ],
   "window":{
     "backgroundTextStyle":"#333",
@@ -18,13 +19,13 @@
     "list":[
       {
         "pagePath": "pages/index/index",
-        "text": "楼盘列表",
+        "text": "主页",
         "iconPath": "img/liebiao.png",
         "selectedIconPath": "img/liebiao.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "资讯",
+        "pagePath": "pages/listHouse/listHouse",
+        "text": "楼盘列表",
         "iconPath": "img/zixun.png",
         "selectedIconPath": "img/zixun.png"
       },

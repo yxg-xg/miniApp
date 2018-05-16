@@ -11,7 +11,7 @@
 <view class="section pTop search bTop">
   <view class='container-fluid'>
     <input placeholder="输入楼盘名/地名/开发商等" class='form-control' />
-    <icon size='20' type='search' color='purple'></icon>
+    <icon size='15' type='search' color='purple'></icon>
   </view>
 </view>
 <view class='screen mTop'>
@@ -64,7 +64,9 @@
           </view>
           <text class='clearfix'>{{item.textSmall}}</text>
         </view>
-        
+      </view>
+      <view class='moreText'>
+        <button class='mTop' type="default" size="default">更多楼盘资讯</button>
       </view>
   </view>
   

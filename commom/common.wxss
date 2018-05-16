@@ -20,6 +20,7 @@ page{
 view{
     position: relative;
     background-color: #fff;
+    box-sizing: border-box;
 }
 a:focus{
     outline: none;

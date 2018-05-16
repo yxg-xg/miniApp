@@ -85,7 +85,7 @@ swiper-item image {
   margin-top: 15rpx;
 }
 .information{
-
+  padding: 40rpx 0;
 }
 .informationTitle{
 
@@ -122,5 +122,9 @@ swiper-item image {
 .informationMainTextB{
   margin-bottom: 30rpx;
   font-weight: bold;
-  font-size: 30rpx;
+  font-size: 32rpx;
+}
+.moreText button{
+  font-size: 32rpx;
+  padding: 12rpx 24rpx;
 }
