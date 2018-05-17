@@ -32,7 +32,7 @@
             <text>{{item.price}}元/m²</text>
           </view>
           <view class='tally'>
-            <text>住宅</text><text>酒店式公寓</text><text>商铺</text>
+            <text wx:for="{{item.tally}}" wx:for-item="itemTally" wx:key="{{tallyIdx}}">{{itemTally.text}}</text>
           </view>
           <view class='discountsMsg'>
             <text>{{item.discountsMsg}}</text>

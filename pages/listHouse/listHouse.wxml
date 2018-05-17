@@ -52,4 +52,40 @@
         </view>
       </view>
     </view>
+</view>
+<view class='choiceness container-fluid clearfix'>
+  <view class='clearfix choicenessOne'>
+    <view class='col-xs-3 text-center' wx:for="{{choicenessOne}}" wx:key="{{index}}" wx:for-item="choicenessOneItem">
+      <text>{{choicenessOneItem.choicenessPrice}}</text>
+    </view>
   </view>
+  <view class='clearfix choicenessOne'>
+      <view class='col-xs-3 text-center' wx:for="{{choicenessTwo}}" wx:key="{{index}}" wx:for-item="choicenessTwoItem">
+        <text>{{choicenessTwoItem.choicenessAdr}}</text>
+      </view>
+    </view>
+</view>
+<view class='container-fluid clearfix'>
+  <view class='recommendList' wx:for="{{recommendImg}}" wx:for-item="item" wx:key="{{index}}">
+      <view class='clearfix'>
+        <view class='recommendListImg'>
+          <image mode='aspectFit' src="{{item.src}}" ></image>
+        </view>
+        <view class='recommendListCon'>
+          <text class='h4'>{{item.title}} <text class='small'>{{item.small}}</text> </text>
+          <view class='price'>
+            <text>{{item.price}}元/m²</text>
+          </view>
+          <view class='tally'>
+            <text wx:for="{{item.tally}}" wx:for-item="itemTally" wx:key="{{tallyIdx}}">{{itemTally.text}}</text>
+          </view>
+          <view class='discountsMsg'>
+            <text>{{item.discountsMsg}}</text>
+          </view>
+        </view>
+      </view>
+      <view class='recommendDiscounts'>
+        <text>{{item.recommendDiscounts}}</text>
+      </view>
+    </view>
+</view>

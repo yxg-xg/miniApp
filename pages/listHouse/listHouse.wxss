@@ -30,7 +30,7 @@
   color: #00c177
 }
 .filtrate{
-  
+   border-bottom: 2rpx solid #e4e4e4
 }
 .filtrateConOuter{
   position: relative;
@@ -41,9 +41,76 @@
   position: absolute;
   top: 0rpx;
   left: 0;
+ 
 }
 .filtrateLi{
   padding:25rpx 15rpx;
   border-bottom: 1px solid #eee;
   font-size: 32rpx; 
+}
+.choiceness{
+
+
+}
+.choicenessOne{
+  padding: 25rpx 0;
+}
+.choiceness text{
+  
+  font-size: 32rpx;
+}
+.recommendList{
+  margin-top: 40rpx;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 40rpx;
+  position: relative;
+}
+.recommendList .recommendListImg{
+  width: 300rpx;
+  height: 204rpx;
+  float: left;
+  margin-right: 40rpx;
+}
+.recommendList .recommendListImg image{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.recommendListCon{
+  float: left;
+}
+.recommendListCon .price{
+  margin-top: 15rpx;
+  color: red;
+  font-size: 32rpx
+}
+.tally{
+  margin-top: 15rpx;
+}
+.tally text{
+  padding: 10rpx;
+  font-size: 24rpx;
+  margin-right: 10rpx;
+}
+.tally text:nth-child(1){
+  color: #ff6b00;
+  background: #fff5df;
+}
+.tally text:nth-child(2){
+  color: #0bbe5a;
+  background: #e6f7ed;
+}
+.tally text:nth-child(3){
+  color: #f65b2f;
+  background: #fee0e2;
+}
+.discountsMsg{
+  margin-top: 15rpx;
+}
+.recommendDiscounts{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 30rpx;
+  color: red;
 }
