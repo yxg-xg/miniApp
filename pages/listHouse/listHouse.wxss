@@ -26,6 +26,9 @@
   height: 25rpx;
   margin-left: 12rpx;
 }
+.filtrateClickAction{
+  color: #00c177
+}
 .filtrate{
   
 }

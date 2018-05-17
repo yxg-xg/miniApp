@@ -7,7 +7,7 @@
   </view>
 </view>
 <view class='filtrate clearfix'>
-  <view class='col-xs-3 filtrateClick' 
+  <view class='col-xs-3 filtrateClick {{filtrateIndex===index ? "filtrateClickAction":""}}' 
   wx:for="{{filtrate}}" 
   wx:key="{{index}}" 
   data-index='{{index}}' 
@@ -19,7 +19,8 @@
 </view>
 <view class='filtrateConOuter'>
     <view class='container-fluid filtrateCon'>
-      <view class='filtrateConList'>
+    <!--区域-->
+      <view class='filtrateConList clearfix' hidden="{{filtrateIndex!=0}}" wx:if="{{toggle}}">
         <view class='col-xs-6'>
           <view class='filtrateLi'>
             <text>不限</text>
@@ -30,6 +31,24 @@
           <view class='filtrateLi'>
             <text>不限</text>
           </view>
+        </view>
+      </view>
+      <!--价格-->
+      <view class='filtrateConList' hidden="{{filtrateIndex!=1}}">
+        <view class='filtrateLi'>
+            <text>10000</text>
+        </view>
+      </view>
+      <!--户型-->
+      <view class='filtrateConList' hidden="{{filtrateIndex!=2}}">
+        <view class='filtrateLi'>
+            <text>1111111</text>
+        </view>
+      </view>
+      <!--更多-->
+      <view class='filtrateConList' hidden="{{filtrateIndex!=3}}">
+        <view class='filtrateLi'>
+            <text>更多</text>
         </view>
       </view>
     </view>
