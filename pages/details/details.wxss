@@ -1,0 +1,23 @@
+@import'/commom/bootstrap.wxss';
+@import '/commom/common.wxss';
+@import'/commom/iconfont.wxss';
+.DetailsVideo{
+  width: 100%;
+  height: 400rpx;
+}
+.DetailsVideo image{
+  width: 100%;
+  height: 100%;
+}
+.DetailsState{
+    display: inline-block;
+    background: #19bf53;
+    padding: 5rpx 10rpx; 
+    color: #fff;
+    font-size: 24rpx;
+    border-radius: 6rpx;
+    margin-right: 10rpx;
+}
+.DetailsPrice{
+  color: red;
+}

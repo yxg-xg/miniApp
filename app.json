@@ -2,7 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/listHouse/listHouse"
+    "pages/listHouse/listHouse",
+    "pages/details/details"
   ],
   "window":{
     "backgroundTextStyle":"#333",

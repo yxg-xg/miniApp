@@ -69,7 +69,8 @@
 </view>
 
 <view class='container-fluid clearfix' style='margin-top:370rpx;'>
-  <view class='recommendList' wx:for="{{recommendImg}}" wx:for-item="item" wx:key="{{index}}">
+  <navigator url="../details/details" wx:for="{{recommendImg}}" wx:for-item="item" wx:key="{{index}}">
+    <view class='recommendList'>
       <view class='clearfix'>
         <view class='recommendListImg'>
           <image mode='aspectFit' src="{{item.src}}" ></image>
@@ -91,4 +92,6 @@
         <text>{{item.recommendDiscounts}}</text>
       </view>
     </view>
+  </navigator>
+  
 </view>

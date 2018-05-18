@@ -1,0 +1,13 @@
+<view class="DetailsVideo">
+  <image src='/img/video.jpg' mode='scaleToFill'></image>
+</view>
+<view class='DetailsBuildMsg'>
+  <view class='container-fluid'>
+    <view class='h4'>
+      东辉西海岸
+      <text class='DetailsState'>在售</text>
+      <text class='DetailsPrice'>8000~13500</text>
+      元/m²
+    </view>
+  </view>
+</view>
