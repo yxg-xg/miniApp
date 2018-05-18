@@ -1,71 +1,74 @@
-<view class='container-fluid'>
-  <view class="section pTop search bTop">
-    <view class='container-fluid'>
-      <input placeholder="输入楼盘名/地名/开发商等" class='form-control' />
-      <icon size='15' type='search' color='purple'></icon>
+<view class='fix'>
+  <view class='container-fluid'>
+    <view class="section pTop search bTop">
+      <view class='container-fluid'>
+        <input placeholder="输入楼盘名/地名/开发商等" class='form-control' />
+        <icon size='15' type='search' color='purple'></icon>
+      </view>
     </view>
   </view>
-</view>
-<view class='filtrate clearfix'>
-  <view class='col-xs-3 filtrateClick {{filtrateIndex===index ? "filtrateClickAction":""}}' 
-  wx:for="{{filtrate}}" 
-  wx:key="{{index}}" 
-  data-index='{{index}}' 
-  wx:for-item="filtrateItem" 
-  bindtap="filtrateClick">
-    <text>{{filtrateItem.filtrateName}}</text>
-    <image src='/img/icon/bottom.png' mode='aspectFit'></image>
+  <view class='filtrate clearfix'>
+    <view class='col-xs-3 filtrateClick {{filtrateIndex===index ? "filtrateClickAction":""}}' 
+    wx:for="{{filtrate}}" 
+    wx:key="{{index}}" 
+    data-index='{{index}}' 
+    wx:for-item="filtrateItem" 
+    bindtap="filtrateClick">
+      <text>{{filtrateItem.filtrateName}}</text>
+      <image src='/img/icon/bottom.png' mode='aspectFit'></image>
+    </view>
   </view>
-</view>
-<view class='filtrateConOuter'>
-    <view class='container-fluid filtrateCon'>
-    <!--区域-->
-      <view class='filtrateConList clearfix' hidden="{{filtrateIndex!=0}}" wx:if="{{toggle}}">
-        <view class='col-xs-6'>
-          <view class='filtrateLi'>
-            <text>不限</text>
+  <view class='filtrateConOuter'>
+      <view class='container-fluid filtrateCon'>
+      <!--区域-->
+        <view class='filtrateConList clearfix' hidden="{{filtrateIndex!=0}}" wx:if="{{toggle}}">
+          <view class='col-xs-6'>
+            <view class='filtrateLi'>
+              <text>不限</text>
+            </view>
           </view>
-        </view>
 
-        <view class='col-xs-6'>
+          <view class='col-xs-6'>
+            <view class='filtrateLi'>
+              <text>不限</text>
+            </view>
+          </view>
+        </view>
+        <!--价格-->
+        <view class='filtrateConList' hidden="{{filtrateIndex!=1}}">
           <view class='filtrateLi'>
-            <text>不限</text>
+              <text>10000</text>
+          </view>
+        </view>
+        <!--户型-->
+        <view class='filtrateConList' hidden="{{filtrateIndex!=2}}">
+          <view class='filtrateLi'>
+              <text>1111111</text>
+          </view>
+        </view>
+        <!--更多-->
+        <view class='filtrateConList' hidden="{{filtrateIndex!=3}}">
+          <view class='filtrateLi'>
+              <text>更多</text>
           </view>
         </view>
       </view>
-      <!--价格-->
-      <view class='filtrateConList' hidden="{{filtrateIndex!=1}}">
-        <view class='filtrateLi'>
-            <text>10000</text>
-        </view>
-      </view>
-      <!--户型-->
-      <view class='filtrateConList' hidden="{{filtrateIndex!=2}}">
-        <view class='filtrateLi'>
-            <text>1111111</text>
-        </view>
-      </view>
-      <!--更多-->
-      <view class='filtrateConList' hidden="{{filtrateIndex!=3}}">
-        <view class='filtrateLi'>
-            <text>更多</text>
-        </view>
-      </view>
-    </view>
-</view>
-<view class='choiceness container-fluid clearfix'>
-  <view class='clearfix choicenessOne'>
-    <view class='col-xs-3 text-center' wx:for="{{choicenessOne}}" wx:key="{{index}}" wx:for-item="choicenessOneItem">
-      <text>{{choicenessOneItem.choicenessPrice}}</text>
-    </view>
   </view>
-  <view class='clearfix choicenessOne'>
-      <view class='col-xs-3 text-center' wx:for="{{choicenessTwo}}" wx:key="{{index}}" wx:for-item="choicenessTwoItem">
-        <text>{{choicenessTwoItem.choicenessAdr}}</text>
+  <view class='choiceness container-fluid clearfix'>
+    <view class='clearfix choicenessOne'>
+      <view class='col-xs-3 text-center' wx:for="{{choicenessOne}}" wx:key="{{index}}" wx:for-item="choicenessOneItem">
+        <text>{{choicenessOneItem.choicenessPrice}}</text>
       </view>
     </view>
+    <view class='clearfix choicenessOne'>
+        <view class='col-xs-3 text-center' wx:for="{{choicenessTwo}}" wx:key="{{index}}" wx:for-item="choicenessTwoItem">
+          <text>{{choicenessTwoItem.choicenessAdr}}</text>
+        </view>
+      </view>
+  </view>
 </view>
-<view class='container-fluid clearfix'>
+
+<view class='container-fluid clearfix' style='margin-top:370rpx;'>
   <view class='recommendList' wx:for="{{recommendImg}}" wx:for-item="item" wx:key="{{index}}">
       <view class='clearfix'>
         <view class='recommendListImg'>

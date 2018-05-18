@@ -34,7 +34,7 @@ Page({
           { text: "酒店式公寓" }, 
           { text: "商铺" },
         ],
-        recommendDiscounts:"保利崖州湾2期新品莱西 瞰海三至四房均价约17500元/平"
+        recommendDiscounts:"瞰海三至四房均价约17500元/平"
       },
       {
         src: '/img/aa.jpg',
@@ -47,7 +47,7 @@ Page({
           { text: "酒店式公寓" },
           { text: "商铺" },
         ],
-        recommendDiscounts: "保利崖州湾2期新品莱西 瞰海三至四房均价约17500元/平"
+        recommendDiscounts: "瞰海三至四房均价约17500元/平"
       },
       {
         src: '/img/aa.jpg',
@@ -60,7 +60,7 @@ Page({
           { text: "酒店式公寓" },
           { text: "商铺" },
         ],
-        recommendDiscounts: "保利崖州湾2期新品莱西 瞰海三至四房均价约17500元/平"
+        recommendDiscounts: "瞰海三至四房均价约17500元/平"
       },
       {
         src: '/img/aa.jpg',
@@ -73,7 +73,7 @@ Page({
           { text: "酒店式公寓" },
           { text: "商铺" },
         ],
-        recommendDiscounts: "保利崖州湾2期新品莱西 瞰海三至四房均价约17500元/平"
+        recommendDiscounts: "瞰海三至四房均价约17500元/平"
       }
     ],
     informationMain: [
