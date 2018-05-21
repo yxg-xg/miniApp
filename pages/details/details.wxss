@@ -21,3 +21,87 @@
 .DetailsPrice{
   color: red;
 }
+.DetailsLable{
+  margin: 30rpx 0;
+}
+.DetailsLable text{
+    display: inline-block;
+    margin-right: 10rpx;
+    padding: 2rpx 10rpx;
+    border-radius: 4rpx;
+    font-size: 30rpx;
+}
+.DetailsLable text:nth-child(1){
+      background: #fbf0de;
+      color: #fa631c;
+}
+.DetailsLable text:nth-child(2){
+    background: #e5f5eb;
+    color: #07bb62;
+}
+.DetailsLable text:nth-child(3){
+    background: #fee0e2;
+    color: #f65b2f;
+}
+.DetailsLableRed{
+  color: red;
+  font-size: 30rpx;
+}
+.DetailsTab{
+  padding: 41rpx 0;
+}
+.DetailsTabTitle{
+  
+}
+.DetailsTabTitle text{
+  
+  font-size: 30rpx;
+  text-align: center;
+}
+.DetailsTabCon{
+  padding-top: 30rpx
+}
+
+.DetailsTabTitle .col-xs-3{
+  padding: 0
+}
+.DetailsTabClickAction{
+   color: #00c177;
+}
+.DetailsTabCon view{
+  height: 300rpx;
+}
+.DetailsTab button{
+  font-size: 32rpx;
+  padding: 12rpx 24rpx;
+}
+.consultPhone{
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+  font-size: 35rpx;
+  text-align: center;
+}
+.consultPhone text{
+  font-size: 40rpx;
+  color: red
+}
+.DetailsBuildParameter{
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+}
+.DetailsBuildParameter .li{
+  padding: 20rpx 0;
+  border-bottom: 2rpx solid #eee;
+}
+.DetailsBuildParameter .li text{
+  font-size: 35rpx;
+}
+.DetailsBuildParameter .li text.h4{
+  font-size: 40rpx;
+}
+.DetailsBuildParameter image{
+  float: left;
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}

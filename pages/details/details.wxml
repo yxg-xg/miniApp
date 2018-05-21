@@ -9,5 +9,59 @@
       <text class='DetailsPrice'>8000~13500</text>
       元/m²
     </view>
+    <view class='DetailsLable'>
+      <text>住宅</text>
+      <text>酒店式公寓</text>
+      <text>商铺</text>
+    </view>
+    <text class='DetailsLableRed'>这里是打折信息</text>
+  </view>
+</view>
+<view class='DetailsTab clearfix'>
+  <view class='container-fluid'>
+    <view class='DetailsTabTitle clearfix'>
+      <text class='col-xs-3 {{DetailsTabIndex===index ? "DetailsTabClickAction":""}}' 
+      wx:for="{{DetailsTab}}" 
+      wx:key="{{index}}" 
+      wx:for-item="DetailsTabItem" 
+      data-index='{{index}}' 
+      bindtap="DetailsTabTitleClick">{{DetailsTabItem.textTitle}}</text>
+    </view>
+    <view class='DetailsTabCon'>
+      <!--实时动态-->
+      <view hidden='{{DetailsTabIndex!=0}}'>
+        111
+      </view>
+      <!--楼盘详情-->
+      <view hidden='{{DetailsTabIndex!=1}}'>
+        222
+      </view>
+      <!--楼盘相册-->
+      <view hidden='{{DetailsTabIndex!=2}}'>
+        333
+      </view>
+      <!--在售相册-->
+      <view hidden='{{DetailsTabIndex!=3}}'>
+        444
+      </view>
+    </view>
+    <button class='btn-danger' size="default">参加团购</button>
+  </view>
+</view>
+<view class='consultPhone mTop'>
+  <view class='container-fluid'>
+    咨询电话： <text>0898-62288888</text> 
+  </view>
+</view>
+<view class='mTop DetailsBuildParameter'>
+  <view class='container-fluid'>
+    <view class='li clearfix'>
+      <text class='h4'>楼盘参数</text>
+    </view>
+    <view class='li clearfix'>
+      <image mode='aspectFit' class='' src='/img/icon/kaifashang.png'></image>
+      <text class='pull-left'>开发商</text>
+      <text class='pull-right'>海南程艳房地产开发有限公司</text>
+    </view>
   </view>
 </view>

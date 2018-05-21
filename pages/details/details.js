@@ -4,8 +4,22 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    DetailsTab:[
+      { textTitle:"实时动态"},
+      { textTitle: "楼盘详情" },
+      { textTitle: "楼盘相册" },
+      { textTitle: "在售相册" },
+    ],
+    DetailsTabIndex:0
   },
+  DetailsTabTitleClick(event){
+    let idx = event.currentTarget.dataset.index;
+    this.setData({
+      DetailsTabIndex: idx,
+      // toggle: false
+    })
+  },
+
 
   /**
    * 生命周期函数--监听页面加载
