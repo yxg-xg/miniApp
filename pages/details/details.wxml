@@ -58,10 +58,29 @@
     <view class='li clearfix'>
       <text class='h4'>楼盘参数</text>
     </view>
-    <view class='li clearfix'>
-      <image mode='aspectFit' class='' src='/img/icon/kaifashang.png'></image>
-      <text class='pull-left'>开发商</text>
-      <text class='pull-right'>海南程艳房地产开发有限公司</text>
+    <view class='li clearfix' wx:for="{{DetailsBuildParameter}}" wx:key="{{index}}" wx:for-item="dbpItem">
+      <image mode='aspectFit' class='' src='{{dbpItem.icon}}'></image>
+      <text class='pull-left'>{{dbpItem.name}}</text>
+      <text class='pull-right'>{{dbpItem.text}}</text>
+    </view> 
+    <button type='default' size="default">查看更多>></button>
+  </view>
+</view>
+<view class='customization'>
+  <view class='text-center h3' style='background:transparent'>看房定制</view>
+  <view class='customizationPP center-block'>
+    已有 <text>123</text>人定制
+  </view>
+  <view class='customizationTitle clearfix' style='background:transparent'>
+    <view style='background:transparent;height:150rpx;' class='col-xs-4'>
+      <image mode='aspectFit' src='/img/customization4.png'></image>
+    </view>
+    <view style='background:transparent;height:150rpx;' class='col-xs-4'>
+      <image mode='aspectFit' src='/img/customization3.png'></image>
+    </view>
+    <view style='background:transparent;height:150rpx;' class='col-xs-4'>
+      <image mode='aspectFit' src='/img/customization2.png'></image>
     </view>
   </view>
+  <button class='btn-warning' size="default">开始定制</button>
 </view>
